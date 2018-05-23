@@ -1,15 +1,15 @@
 {
-	"fields": {
-		"title": {
-		  "type": "String",
-		  "required": true
-		},
-  	"author": {
-	    "type": "Reference",
-	    "settings": {
-	      "collection": "person"
-	    }
-  	},
+    "fields": {
+        "title": {
+          "type": "String",
+          "required": true
+        },
+    "author": {
+        "type": "Reference",
+        "settings": {
+          "collection": "person"
+        }
+    },
     "authorStrict": {
       "type": "Reference",
       "settings": {
@@ -17,11 +17,14 @@
         "strictCompose": true
       }
     },
-  	"booksInSeries": {
-	    "type": "Reference"
-  	}
+    "publishStatus": {
+      "type": "Object"
+    },
+    "booksInSeries": {
+      "type": "Reference"
+    }
   },
-	"settings": {
+    "settings": {
     "cache": true,
     "authenticate": false,
     "count": 40,
